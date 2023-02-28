@@ -1,0 +1,51 @@
+// Declare variables for DOM elements
+const getStartedBtn = document.querySelector('.cta-btn');
+const signUpBtn = document.querySelector('.cta button');
+const signUpForm = document.querySelector('.cta form');
+const userAccountsFeature = document.querySelectorAll('.feature')[0];
+const dataVisualizationFeature = document.querySelectorAll('.feature')[1];
+const remindersFeature = document.querySelectorAll('.feature')[2];
+const customizationFeature = document.querySelectorAll('.feature')[3];
+const progressTrackingFeature = document.querySelectorAll('.feature')[4];
+const socialFeatures = document.querySelectorAll('.feature')[5];
+
+// Event listener for Get Started button
+getStartedBtn.addEventListener('click', () => {
+  // Redirect to sign up page
+  window.location.href = '/signup';
+});
+
+// Event listener for Sign Up button
+signUpBtn.addEventListener('click', () => {
+  // Validate form data and create new user account
+  const formData = new FormData(signUpForm);
+  const username = formData.get('username');
+  const email = formData.get('email');
+  const password = formData.get('password');
+  // TODO: Implement account creation logic
+});
+
+// Event listeners for feature buttons
+userAccountsFeature.addEventListener('click', () => {
+  // TODO: Show user accounts feature details
+});
+
+dataVisualizationFeature.addEventListener('click', () => {
+  // TODO: Show data visualization feature details
+});
+
+remindersFeature.addEventListener('click', () => {
+  // TODO: Show reminders feature details
+});
+
+customizationFeature.addEventListener('click', () => {
+  // TODO: Show customization feature details
+});
+
+progressTrackingFeature.addEventListener('click', () => {
+  // TODO: Show progress tracking feature details
+});
+
+socialFeatures.addEventListener('click', () => {
+  // TODO: Show social features details
+});
